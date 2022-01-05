@@ -9,14 +9,58 @@ class XylophoneApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Center(
-            child: TextButton(
-              onPressed: () {
-                final player = AudioCache();
-                player.play('note1.wav');
-              },
-              child: Text('Click Me'),
-            ),
+          child: Column(
+            children: <Widget>[
+              TextButton(
+                style: TextButton.styleFrom(backgroundColor: Colors.red),
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note1.wav');
+                },
+              ),
+              TextButton(
+                style: TextButton.styleFrom(backgroundColor: Colors.orange),
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note2.wav');
+                },
+              ),
+              TextButton(
+                style: TextButton.styleFrom(backgroundColor: Colors.yellow),
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note3.wav');
+                },
+              ),
+              TextButton(
+                style: TextButton.styleFrom(backgroundColor: Colors.green),
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note4.wav');
+                },
+              ),
+              TextButton(
+                style: TextButton.styleFrom(backgroundColor: Colors.teal),
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note5.wav');
+                },
+              ),
+              TextButton(
+                style: TextButton.styleFrom(backgroundColor: Colors.blue),
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note6.wav');
+                },
+              ),
+              TextButton(
+                style: TextButton.styleFrom(backgroundColor: Colors.purple),
+                onPressed: () {
+                  final player = AudioCache();
+                  player.play('note7.wav');
+                },
+              ),
+            ],
           ),
         ),
       ),
